@@ -1,9 +1,7 @@
 # Image Style Transfer using Convolutional Neural Network in PyTorch
 This is unofficial pytorch implementation of a paper, "Image Style Transfer using Convolutional Neural Network" [Gatys+, CVPR2016].
 
-<img src='imgs/style.jpg' title='Style Image' width='33%'>
-<img src='imgs/content.jpg' title='Content Image' width='33%'>
-<img src='imgs/transferred.jpg' title='Transferred Image' width='33%'>
+<img src='imgs/style.jpg' title='Style Image' width='33%'> <img src='imgs/content.jpg' title='Content Image' width='33%'> <img src='imgs/transferred.jpg' title='Transferred Image' width='33%'>
 
 ## Requirements
 * Python 3.5+ (tested with 3.5.4)
@@ -24,26 +22,26 @@ This is unofficial pytorch implementation of a paper, "Image Style Transfer usin
 
 ### Examples
 With CPU:
-``` python
+```bash
 python style_transfer.py -c contents/golden_gate.jpg -s styles/kandinsky.jpg
 ```
 With GPU:
-``` python
+```bash
 python style_transfer.py -c contents/golden_gate.jpg -s styles/kandinsky.jpg --cuda
 ```
 
 ## Installation
-```
+```bash
 git clone https://kenjienomoto@bitbucket.org/kenjienomoto/style_transfer_cvpr2016.git
 ```
 
 ### Docker
-```
+```bash
 docker build -t style_transfer .
 docker run -it style_transfer
 ```
 ### Nvidia Docker
-```
+```bash
 nvidia-docker build -t style_transfer_gpu .
 nvidia-docker run style_transfer_gpu
 ```
