@@ -30,6 +30,6 @@ ENV LD_LIBRARY_PATH /usr/local/nvidia/lib:/usr/local/nvidia/lib64
 
 WORKDIR /workspace
 
-RUN git clone https://kenjienomoto@bitbucket.org/kenjienomoto/style_transfer_cvpr2016.git
+RUN git clone https://github.com/enomotokenji/pytorch-Neural-Style-Transfer.git
 
 RUN chmod -R a+w /workspace

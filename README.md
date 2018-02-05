@@ -32,7 +32,8 @@ python style_transfer.py -c contents/golden_gate.jpg -s styles/kandinsky.jpg --c
 
 ## Installation
 ```bash
-git clone https://kenjienomoto@bitbucket.org/kenjienomoto/style_transfer_cvpr2016.git
+git clone https://github.com/enomotokenji/pytorch-Neural-Style-Transfer.git
+cd pytorch-Neural-Style-Transfer
 ```
 
 ### Docker
